@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <style>
+        .head {
+            width: 2000px;
+            height: 70px;
+            font-family : "Zen Old Mincho";
+            /* position: fixed; */
+            position : absolute;
+
+        }
+        .header_bloom{
+            padding-left: 197px;
+            padding-top : 17px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .header_menu{
+            color: #AEAEAE;
+            font-weight: bold;
+        }
+            .header_main{
+                padding-left: 565px;
+                padding-top: 22px;
+                font-size: 18px;
+            }
+            .header_notice{
+                padding-left: 120px;
+                padding-top : 22px;
+                font-size: 18px;
+            }
+            .header_contact{
+                padding-left: 120px;
+                padding-top : 22px;
+                font-size: 18px;
+            }
+
+        .header_infomenu{
+            padding-left:150px;
+            padding-top: 14px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+       
+        .title{
+            width: 691px;
+            height: 52px;
+            padding-left:224px;
+            padding-top:227px;
+            font-size:36px;
+            font-family: "Noto Sans KR";
+            font-weight: bold;
+        }
+
+        /*  첫번째 선  */
+        #hr1{
+            width :1440px;
+            margin-left: 197px;
+            margin-top: 50px;
+        }
+
+        /*  제목 label + 제목 input 설정 */
+        .port_title{
+            display:inline-block;
+            margin-top : 83px;
+            height: 30px;
+            font-family: "Noto Sans KR";
+            margin-left: 235px;
+            font-size:20px;
+            font-weight: bold;
+        }
+        /*  '포트폴리오 제목' 설정 */
+        .portfolio_title{
+            height: 30px;
+            font-family: "Noto Sans KR";
+            margin-left: 235px;
+            font-size:20px;
+            font-weight: bold;
+        }
+        /* 제목 input label 설정 */
+        #protfolio_title_in_label{
+            height : 30px;
+            align-items: baseline;
+            position:fixed;
+        }
+        /* 제목 input 설정 */
+        #portfolio_title_in{
+            width: 681px;
+            height : 35px;
+            margin-left:254px;
+            border-right:0px;
+            border-top:0px;
+            border-left : 0px;
+            border-color:#ABABAB;
+            font-size: 20px;
+            font-family:"Noto Sans KR";
+            text-align:center;
+        }
+        /* 제목 placeholder 설정 */
+        #portfolio_title_in::placeholder{
+            color: #D6D6D6;
+            font-size: 20px;
+            font-family: "Noto Sans KR";
+            text-align: right;
+
+        }
+        /* input 박스를 클릭했을때 나오는 테두리 색상 없애기 */
+        #portfolio_title_in:focus{
+            outline:none;
+        }
+        /* 두번째 선 */
+        #hr2{
+            width :1440px;
+            margin-left: 197px;
+            margin-top: 83px;
+        }
+
+        /* 라벨에 붙는 빨간별 */
+        .name_star{
+            color:  RED;
+        }
+
+
+        /*  포트폴리오 라벨 + 설명 */
+        .port_content{
+            height: 800px;
+            font-family: "Noto Sans KR";
+            margin-left: 235px;
+            font-size:20px;
+            font-weight: bold;
+            margin-top : 71px;
+            display: inline-block;
+        }
+
+        /* 포트폴리오 라벨   */
+        #portfolio_content_label{
+            
+            margin-top: 800px;
+            /* align-items: start; */
+
+            
+        }
+
+        /*  포트폴리오 설명  */
+        #portfolio_content{
+            /* margin-top: 71px; */
+            margin-left: 254px;
+            height: 681px;
+            width: 580px;
+            border-radius:20px;
+            border-left-color:#D6D6D6;
+            border-color:#D6D6D6;
+            font-size: 20px;
+            font-family:"Noto Sans KR";
+            vertical-align: top;
+            padding: 50px;
+            size:1000px;
+            resize: none;
+            
+        }
+
+        /*  포트폴리오 설명 placeholder  */
+        #portfolio_content::placeholder{
+            color: #D6D6D6;
+            font-size: 20px;
+            font-family: "Noto Sans KR";
+            text-align:center;
+            opacity: 1;
+            box-sizing: content-box;
+            padding-top: 50%;
+        }
+
+
+        /*  세번쨰 선 */
+        #hr3{
+            width :1440px;
+            margin-left: 197px;
+            margin-top: 83px;
+        }
+
+        .port_photo{
+            position: absolute;
+            display:inline-block;
+            margin-top : 83px;
+            height: 30px;
+            font-family: "Noto Sans KR";
+            margin-left: 235px;
+            
+            font-weight: bold;
+        }
+        #portfolio_photo_label{
+            font-size:20px;
+        }
+
+        #photo_announce{
+            font-size: 12px;
+            width: 125px;
+            height: 22px;
+            margin-top:0px;
+            color: #B3B3B3
+        }
+
+        .portfolio_photo{
+            margin-left: 254px;
+            visibility : hidden;
+        }
+
+
+
+
+
+
+        .button{
+            display : flex;
+            justify-content : center;
+        }
+
+        li{
+            list-style: none;
+        }
+        
+
+        .upload{
+            position:absolute;
+            margin-left: 650px;
+            margin-top : 59px;
+            display: inline-block;
+            width : 250px;
+            height : 250px;
+            border-color : #EAEAEA;
+            background-color: #F9F9F9;
+            padding : auto;
+        }
+        img{
+            
+            width: 40px;
+            height: 40px;
+            color:#B3B3B3;
+            padding : 100px;
+            padding-left: 110px;
+        }
+
+        .real-upload{
+            display:none;
+        }
+
+        .image-preview{
+            width: 1300px;
+            height: 200px;
+            display : flex;
+            gap: 20px;
+        }
+
+    </style>
+    <title>포트폴리오 등록</title>
+</head>
+<body>
+    <span class="head">
+        <!-- 헤더 상호명 -->
+        <span class="header_bloom">Bloom</span>
+    
+        <!--  헤더 중앙 메인메뉴 -->
+        <span class="header_menu">
+            <span class="header_main">MAIN</span>
+            <span class="header_notice">NOTICE</span>
+            <span class="header_contact">CONTACT</span>
+        </span>
+
+
+        <!-- 헤더 우측 정보 메뉴 -->
+        <span class="header_infomenu">
+            <span class="header_message">MESSAGE</span>
+            &nbsp  | &nbsp 
+            <span class="header_mypage">MY PAGE</span>
+            &nbsp  | &nbsp
+            <span class="header_login">LOGIN</span> 
+            &nbsp | &nbsp 
+            <span class="header_join">JOIN</span>
+        </span>
+      
+    </span>
+   
+
+<div class="title">포트폴리오 등록</div>
+
+<!-- 첫번째 굵은 선  -->
+<hr id="hr1" size="4px" color="black">
+
+    <span class="port_title">
+        <!-- 포트폴리오 제목  -->
+        <!-- <span class="portfolio_title">
+            포트폴리오 제목
+        </span>
+        <span class="portfolio_title_in">
+            <input type="text">
+        </span> -->
+        <label for="portfolio_title_in" name="protfolio_title_in_label">포트폴리오 제목 <span class="name_star">*</span></label> 
+        
+        <input id ="portfolio_title_in" type="text" name="portfolio_title_in" size="20" placeholder="(최대 30자)">
+    </span>
+
+<!-- 두번째 얇은 선   -->
+<hr id="hr2" size="1px" color="#D9D9D9">
+
+    <!-- 포트폴리오 설명 + 설명란  -->
+    <div class="port_content">
+        <label for="portfolio_content" name="portfolio_content_label">포트폴리오 설명 <span class="name_star">*</span></label>
+        <!-- <input id="portfolio_content" type="text" name="portfolio_content" placeholder="(최대 1000자)"> -->
+        <textarea id="portfolio_content" maxlength="1000" placeholder="(최대 1000자)"></textarea>
+    </div>
+
+
+<!-- 세번쨰 얇은 선 -->
+<hr id="hr3" size="1px" color="#D9D9D9">
+
+    <div class="port_photo">
+        <label for="portfolio_photo" id="portfolio_photo_label"> 포트폴리오 사진 <span class="name_star">*</span></label>
+        <!-- <input type="file" class="portfolio_photo" accept="image/*"> -->
+        <div id="photo_announce">사진은 최대 5장까지 <br>업로드 할 수 있습니다.</div>
+    
+    </div>
+    <div class="upload">
+        <img src="img/photoRegist.png" >
+        <input type="file" class="portfolio_photo" accept="image/*">
+    </div>
+    
+    <div class="real-upload"></div>
+        <ul class="image-preview"></ul>
+
+    <script>
+        function getImageFiles(e){
+            const uploadFiles = [];
+            const files = e.currentTarget.files;
+            console.log(typeof files, files);
+            const imagePreview = document.querySelector('.image-preview');
+            const docFrag = new DocumentFragment();
+
+            if([...files].length >= 6){
+                alert('이미지는 최대 5개까지 업로드가 가능합니다.');
+                return;
+            }
+
+            //파일 타입 검사
+            [...files].forEach(file => {
+                if(!file.type.match("image/.*")){
+                    alert('이미지 파일만 업로드가 가능합니다.');
+                    return;
+                }
+
+                //파일 갯수 검사
+                if([...files].length < 6){
+                    uploadFiles.push(file);
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        const preview = createElement(e, file);
+                        imagePreview.appendChild(preview);
+
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        }
+
+        function createElement(e, file){
+            const li = document.createElement('li');
+            const img = document.createElement('img');
+            img.setAttribute('src', e.target.result);
+            img.setAttribute('data-file', file.name);
+            li.appendChild(img);
+
+            return li;
+        }
+
+        const realUpload = document.querySelector('.real-upload');
+        const upload = document.querySelector('.upload');
+
+        upload.addEventListener('click', () => realUpload.click());
+
+        realUpload.addEventListener('change', getImageFiles);
+
+        </script>
+</body>
+</html>
